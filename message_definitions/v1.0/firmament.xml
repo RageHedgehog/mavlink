@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<mavlink>
+  <include>common.xml</include>
+  <enums>
+  </enums>
+  <messages>
+    <message id="12000" name="FMT_PILOT_CMD">
+      <description>Pilot command message</description>
+      <field type="uint32_t" name="timestamp">timestamp in milliseconds</field>
+      <field type="float" name="ls_lr">Left stick left/right</field>
+      <field type="float" name="ls_ud">Left stick up/down</field>
+      <field type="float" name="rs_lr">Right stick left/right</field>
+      <field type="float" name="rs_ud">Right stick up/down</field>
+      <field type="uint32_t" name="mode">Control Mode</field>
+      <field type="uint32_t" name="command_1">Pilot command 1</field>
+      <field type="uint32_t" name="command_2">Pilot command 2</field>
+    </message>
+  </messages>
+</mavlink>
